@@ -27,7 +27,7 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           loading="lazy"
           onError={(e) => {
             const target = e.target as HTMLImageElement
-            target.src = '/src/assets/images/product-iphone.svg'
+            target.src = '/src/assets/images/product-iphone.png'
           }}
         />
       </div>
