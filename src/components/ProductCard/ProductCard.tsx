@@ -1,3 +1,4 @@
+import productFallback from '../../assets/images/product-iphone.svg'
 import { Product } from '../../interfaces/Product'
 import './ProductCard.scss'
 
@@ -26,9 +27,11 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           className="product-card__image"
           loading="lazy"
           onError={(e) => {
-            const target = e.target as HTMLImageElement
-            target.src = '/src/assets/images/product-iphone.png'
-          }}
+  const target = e.target as HTMLImageElement
+  if (target.src !== productFallback) {  
+    target.src = productFallback
+  }
+}}
         />
       </div>
 
