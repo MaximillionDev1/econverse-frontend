@@ -43,10 +43,10 @@ const navLinks = [
 export function Navbar() {
   return (
     <nav className="navbar" aria-label="Navegação principal">
-      <div className="navbar__top container">
-        <a href="/" className="navbar__logo" aria-label="Econverse">
-          <img src={logo} alt="Econverse" width={139} height={42} />
-        </a>
+      <div className="navbar__top">        
+    <a href="/" className="navbar__logo" aria-label="Econverse">
+      <img src={logo} alt="Econverse" width={139} height={42} />
+    </a>
 
         <div className="navbar__search">
           <label htmlFor="search" className="sr-only">Buscar produtos</label>
