@@ -9,6 +9,10 @@ Landing page de e-commerce desenvolvida como teste técnico para a vaga de Desen
   <img src="./src/assets/images/preview.gif" alt="Preview da aplicação" width="900"/>
 </p>
 
+## Deploy
+
+🔗 [econverse-frontend-five.vercel.app](https://econverse-frontend-five.vercel.app)
+
 ## Stack
 
 - React 18
