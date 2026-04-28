@@ -1,0 +1,154 @@
+@use '../../styles/global.scss' as *;
+
+.footer {
+
+
+  &__main {
+    background: #F4F4F4;
+    padding: 48px 0 56px;
+  }
+
+  &__grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  
+  &__brand-col {
+    flex: 0 0 360px;
+    min-width: 0;
+    padding-right: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @media (max-width: 900px) {
+      flex: 0 0 260px;
+      padding-right: 32px;
+    }
+
+    @media (max-width: 600px) {
+      flex: none;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__logo-link {
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 160px;
+    height: auto;
+  }
+
+  &__desc {
+    font-size: 13px;
+    color: $text-mid;
+    line-height: 1.6;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 4px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-mid;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  // ── Linha divisória vertical ──────────────────────────────
+  &__divider {
+    width: 1px;
+    background: #D8D8D8;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin: 0 48px;
+
+    @media (max-width: 900px) {
+      margin: 0 24px;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  // ── Grid das 3 colunas de links ───────────────────────────
+  &__links-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__col-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: $text;
+    margin-bottom: 6px;
+  }
+
+  &__col-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    font-size: 13px;
+    color: $text-mid;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  // ── Rodapé inferior branco centralizado ──────────────────
+  &__bottom {
+    background: $white;
+    border-top: 1px solid $border;
+    padding: 18px 0;
+
+    p {
+      font-size: 12px;
+      color: $text-light;
+      text-align: center;
+    }
+  }
+
+  // ── Responsividade geral ──────────────────────────────────
+  @media (max-width: 600px) {
+    &__grid {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}

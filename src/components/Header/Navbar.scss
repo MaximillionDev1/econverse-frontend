@@ -1,0 +1,132 @@
+@use '../../styles/global.scss' as *;
+
+.navbar {
+  background: $white;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+   top: 0;
+  z-index: 100;
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+     padding-top: 24px;
+  padding-bottom: 24px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    img { width: 139px; height: auto; }
+  }
+
+  &__search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #F7F5F2;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 630px;
+    height: 48px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 100%;
+      order: 3;
+      flex: none;
+    }
+  }
+
+  &__search-input {
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-family: $font;
+    color: $text;
+    background: transparent;
+
+    &::placeholder { color: $text-light; }
+  }
+
+  &__search-btn {
+    width: 44px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-shrink: 0;
+
+    &:hover { opacity: 0.7; }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  &__action-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+
+    &:hover { background: $bg; }
+
+    svg { flex-shrink: 0; }
+  }
+
+  
+  &__bottom-wrap {
+    border-top: 1px solid #F0F0F0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-mid;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+
+    &:hover { color: $blue; }
+
+    &--highlight {
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 13 Pro Max 256GB Prata",
+    "description": "O iPhone 13 Pro Max tem uma tela Super Retina XDR com ProMotion, sistema de câmera Pro com telefoto, teleobjetiva e câmera ultra-wide.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 7499.9,
+    "installments": { "quantity": 12, "value": 624.99 }
+  },
+  {
+    "id": 2,
+    "name": "iPhone 13 Pro 128GB Grafite",
+    "description": "Sistema de câmera Pro com grandes melhorias. Chip A15 Bionic, o mais rápido em smartphones.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 6499.9,
+    "installments": { "quantity": 12, "value": 541.66 }
+  },
+  {
+    "id": 3,
+    "name": "iPhone 13 128GB Azul",
+    "description": "iPhone 13. O sistema de câmera dupla mais avançado já em um iPhone 13. Chip A15 Bionic ultrarrápido.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 5499.9,
+    "installments": { "quantity": 12, "value": 458.33 }
+  },
+  {
+    "id": 4,
+    "name": "iPhone 13 mini 256GB Meia-Noite",
+    "description": "O menor, mais fino e mais leve iPhone 5G. Câmera dupla avançada com modo Cinematic.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 4999.9,
+    "installments": { "quantity": 12, "value": 416.66 }
+  },
+  {
+    "id": 5,
+    "name": "iPhone 12 Pro Max 512GB Ouro",
+    "description": "Tela Super Retina XDR de 6,7 polegadas. Sistema de câmera Pro com LiDAR Scanner.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 6299.9,
+    "installments": { "quantity": 12, "value": 524.99 }
+  },
+  {
+    "id": 6,
+    "name": "iPhone 12 128GB Vermelho",
+    "description": "5G ultrarrápido. Tela Super Retina XDR. Chip A14 Bionic. Sistema de câmera dupla avançado.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 4299.9,
+    "installments": { "quantity": 12, "value": 358.33 }
+  },
+  {
+    "id": 7,
+    "name": "iPhone 11 64GB Preto",
+    "description": "Câmera dupla de 12 MP com Ultra-wide. Modo Noite. Vídeo 4K. Chip A13 Bionic.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 3299.9,
+    "installments": { "quantity": 12, "value": 274.99 }
+  },
+  {
+    "id": 8,
+    "name": "iPhone SE 3ª Geração 128GB Branco",
+    "description": "O iPhone mais acessível com chip A15 Bionic. 5G. Câmera traseira de 12 MP.",
+    "photo": "/src/assets/images/product-iphone.png",
+    "price": 2999.9,
+    "installments": { "quantity": 12, "value": 249.99 }
+  }
+]

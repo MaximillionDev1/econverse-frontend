@@ -1,0 +1,77 @@
+// ─── Variables ───────────────────────────────────────────────
+$yellow: #F7CA11;
+$blue: #2B2D7E;
+$blue-hover: #3D3FA0;
+$text: #1E1E1E;
+$text-mid: #474747;
+$text-light: #8C8C8C;
+$border: #E5E5E5;
+$bg: #F5F5F5;
+$white: #FFFFFF;
+$green: #59B13F;
+
+$font: 'Nunito Sans', sans-serif;
+$container: 1280px;
+
+// ─── Reset ───────────────────────────────────────────────────
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  color: $text;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: $font;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 24px;
+  
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
